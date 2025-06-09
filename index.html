@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.77">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="es"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Daniel Mul - Cognito&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Open Sans', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #000;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #FFD700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>scroll-behavior: smooth;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Use Google Fonts for a better look (requiere conexión a Internet) */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1, h2, h3 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Playfair Display', serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #000;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 1000;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.5em 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav ul {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>list-style: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav li {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 1em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #FFD700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>nav a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: underline;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 5em 1em 2em 1em; /* padding-top para evitar superposición con el menú fijo */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 4em 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>section:nth-of-type(even) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/* (Opcional) Fondo ligeramente distinto para secciones alternas */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #0a0a0a;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 2.5em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 0.5em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.8em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 0.5em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 2px solid #FFD700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-bottom: 0.2em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h3 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.3em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 1em 0 0.5em 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #FFD700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0.5em 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.frase {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.1em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0.5em 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 1em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #888;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Cargar Google Fonts (Playfair Display y Open Sans) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="#introduccion"&gt;Introducción&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="#historia"&gt;Historia&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="#metodo"&gt;Método&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="#ecosistema"&gt;Ecosistema&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="#futuro"&gt;Futuro&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="#manifiesto"&gt;Manifiesto&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Introducción --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="introduccion"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;Daniel Mul&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Emprendedor espiritual y arquitecto del cambio consciente.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;Visión:&lt;/strong&gt; Despertar el poder interior de las personas para crear riqueza con propósito y conciencia.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;Propósito:&lt;/strong&gt; Integrar la espiritualidad y los negocios para transformar vidas y construir un legado de impacto positivo.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Historia de Vida y Evolución Empresarial --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="historia"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Historia de Vida y Evolución Empresarial&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Mi historia de vida es una evolución constante. Comencé desde la sencillez, descubriendo de joven la libertad y la responsabilidad de emprender. Cada paso estuvo marcado por aprendizajes: fracasos que templaron mi carácter y éxitos que alimentaron mi hambre de crecer. De un modesto inicio surgió una visión más grande, pasando de pequeños negocios a liderar múltiples empresas. Esta trayectoria forjó en mí la convicción de que el crecimiento empresarial y el desarrollo personal van de la mano, preparándome para dar vida al ecosistema Cognito.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- El Método Cognito --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="metodo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;El Método Cognito&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Desarrollé el Método Cognito como una filosofía de emprendimiento consciente. Su esencia radica en equilibrar la estrategia empresarial con la evolución personal y espiritual. El método se compone de fases claras, desde la introspección y descubrimiento del propósito, pasando por la planificación estratégica, hasta la manifestación y expansión de la visión. Cada fase guía al emprendedor a alinear su negocio con su esencia. El propósito del Método Cognito es empoderar a líderes para crear empresas con alma, donde el éxito material sea reflejo de un propósito superior.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Modelos de Negocio del Ecosistema --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="ecosistema"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Modelos de Negocio del Ecosistema&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="barberias"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Barberías&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Las barberías fueron mi primer campo de batalla en los negocios. De una sola barbería de barrio, aprendí el valor de la calidad y la consistencia. Con el tiempo, ese negocio inicial creció hasta convertirse en una cadena en expansión, manteniendo siempre la esencia: un servicio excepcional y una experiencia auténtica para cada cliente. Operar barberías me enseñó a gestionar equipos, estandarizar operaciones y soñar en grande con la expansión internacional sin perder la cultura original.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="camiones"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Inversiones en Camiones (Zeven Global)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Diversifiqué mi portafolio incursionando en inversiones en camiones de carga a través de una alianza con Zeven Global. Este modelo de negocio ofrece una estructura sólida: inversionistas obtienen participación en flotas de camiones operativos, recibiendo ganancias pasivas mientras contribuyen al movimiento de la economía real. La propuesta es simple pero poderosa: convertir activos físicos en flujo constante de ingresos. Esta iniciativa no solo genera rentabilidad, sino que también crea confianza y prosperidad compartida.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="broker"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Broker y Expansión LATAM&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Como bróker en mercados financieros, lideré una ambiciosa expansión por Latinoamérica. Construí una red de traders y afiliados, implementando una estructura de lotes que recompensa el volumen operado y un esquema CPA (costo por adquisición) para quienes suman nuevos inversionistas. Bajo contratos claros y ética profesional, formé líderes en cada país, asegurando un crecimiento orgánico. Esta expansión no solo impulsó negocios, sino que demostró el poder del liderazgo colaborativo y la visión compartida.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="ia"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Cognito IA y Automatización Empresarial&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;En la era de la inteligencia artificial, lancé proyectos como &lt;strong&gt;Provigasa&lt;/strong&gt; para llevar la automatización al corazón de los negocios. Cognito IA representa la integración de tecnología de punta con la estrategia empresarial tradicional. A través de soluciones de IA de marca blanca (white label), ayudamos a empresas a optimizar sus procesos, desde la gestión interna hasta la atención al cliente, todo con un toque de innovación Cognito. Este enfoque vanguardista demuestra que la eficiencia operativa y la visión futurista pueden ir de la mano en el ecosistema empresarial.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="turismo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Turismo Médico y Negocios Complementarios&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Identifiqué en el turismo médico una oportunidad de unir servicio y bienestar. Mediante alianzas con clínicas y profesionales de salud, desarrollé un modelo que facilita a personas de distintos países acceder a tratamientos de calidad a costos accesibles. Este negocio se complementa con servicios colaterales, desde alojamiento hasta transporte, creando un ecosistema de apoyo al paciente. Al incursionar en el turismo médico, expando el alcance de Cognito hacia sectores que enriquecen tanto la vida de las personas como la diversificación de nuestro portafolio empresarial.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="comunidad"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Comunidad Cognito&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;La Comunidad Cognito es el núcleo humano de toda mi visión. Creé una red de emprendedores y líderes donde cada miembro encuentra apoyo, mentoría y recursos. La estructura de la comunidad se organiza por niveles de participación y compromiso: desde nuevos integrantes con ganas de aprender, hasta mentores experimentados que guían a los demás. Cada rol tiene un propósito y cada membresía ofrece beneficios, eventos exclusivos y contenido de alto valor. Juntos formamos una tribu unida por valores compartidos, crecimiento mutuo y la misión de llevar la conciencia al mundo empresarial.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="club"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Cognito Club&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Cognito Club es la extensión íntima de la comunidad, un espacio privilegiado para el crecimiento profundo. A través de contenido exclusivo &amp;mdash;desde sesiones estratégicas hasta encuentros sobre espiritualidad en los negocios&amp;mdash; cultivamos una visión holística del éxito. En este círculo, la estrategia empresarial se mezcla con prácticas de mindfulness, filosofía y discusiones sinceras sobre los retos del emprendedor. El Club es más que aprendizaje; es un estilo de vida donde la ambición y la paz interior conviven, forjando empresarios íntegros y conscientes.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="networking"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Network Marketing&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;En mi trayectoria utilicé el Network Marketing como algo más que un modelo de ventas: fue una táctica estratégica. Apliqué la cobertura de mercado para alcanzar a una audiencia amplia, la disuasión para fortalecer la lealtad dentro de mi red y la distracción para mantener a la competencia fuera de foco. Esta experiencia me enseñó a manejar dinámicas de equipo, motivar personas y crear sistemas que se replican. El mercadeo en red, usado con integridad, se convirtió en una escuela de liderazgo y en una herramienta de crecimiento que complementa al ecosistema Cognito.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="manifestacion"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Manifestación Cuántica y Entrenamiento Mental&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;La manifestación cuántica es una piedra angular en mi filosofía de vida. Creo firmemente que la mente crea la realidad, y por ello cultivo diariamente un entrenamiento mental disciplinado. A través de la meditación, la visualización y prácticas de enfoque, alinho cada pensamiento con mi propósito más elevado. Este trabajo interior constante alimenta mi espíritu y amplifica mis resultados empresariales. En Cognito, enseño que dominar la mente es tan crucial como dominar el mercado: es el camino para materializar una visión trascendente.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Planificación Futura --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="futuro"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Planificación Futura&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Miro hacia el futuro con determinación y fe. Mis objetivos de expansión incluyen llevar nuestras barberías y proyectos de inversión a nuevos países. También planeo lanzar productos innovadores que fusionen tecnología e inspiración (desde plataformas digitales Cognito impulsadas por IA hasta programas educativos globales). Anhelo ver florecer comunidades Cognito en toda Latinoamérica y el mundo, empoderando a miles de emprendedores espirituales. A largo plazo, mi visión es que Cognito evolucione de un ecosistema empresarial a un legado: un movimiento que transforme la manera en que vivimos la espiritualidad y los negocios, dejando huella en generaciones venideras.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Manifiesto --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="manifiesto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Manifiesto&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="frase"&gt;"La riqueza es un estado mental antes que una cifra en el banco."&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="frase"&gt;"El éxito no vale nada si el alma llega vacía."&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="frase"&gt;"Cada empresa que construyo es un acto de fe y voluntad."&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="frase"&gt;"No hay atajos: la disciplina es el puente entre la visión y la manifestación."&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="frase"&gt;"Cognito no es solo un negocio, es un movimiento de conciencia."&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Contacto --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contacto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Contacto&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Para consultas privadas o unir fuerzas en esta visión, puedes escribirme a &lt;a href="mailto:correo@ejemplo.com"&gt;correo@ejemplo.com&lt;/a&gt;.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;em&gt;Recuerda: tu propósito es la brújula que guía cada paso de tu camino.&lt;/em&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&amp;copy; 2025 Daniel Mul. Todos los derechos reservados.</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+<p class="p2"><br></p>
+</body>
+</html>
